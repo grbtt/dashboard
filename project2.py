@@ -151,6 +151,7 @@ def generate_table(dataframe, max_rows=10):
 
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 app.layout = html.Div([
     html.H1('IST Energy Forecast tool (kWh)'),
